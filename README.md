@@ -3,7 +3,7 @@
 ## Student Details
 Name: Vedika Patel
 
-Roll Number: 24BEY10180 
+Registration Number: 24BEY10180 
 
 ## Chosen Software
 Git
