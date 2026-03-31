@@ -1,7 +1,26 @@
 #!/bin/bash
-echo "Open Source Audit"
-echo "Software: VLC"
-echo "User: $(whoami)"
-echo "Kernel: $(uname -r)"
-echo "Uptime: $(uptime -p)"
-echo "Date: $(date)
+# Script 1: System Identity Report
+# Author: Vedika | Course: Open Source Software
+
+# --- Variables ---
+STUDENT_NAME="Vedika"
+SOFTWARE_CHOICE="Git"
+
+# --- System info ---
+KERNEL=$(uname -r)
+USER_NAME=$(whoami)
+UPTIME=$(uptime -p)
+DATE=$(date)
+DISTRO=$(lsb_release -d 2>/dev/null | cut -f2)
+
+# --- Display ---
+echo "================================"
+echo "  Open Source Audit — $STUDENT_NAME"
+echo "================================"
+echo "Software : $SOFTWARE_CHOICE"
+echo "Kernel   : $KERNEL"
+echo "User     : $USER_NAME"
+echo "Distro   : $DISTRO"
+echo "Uptime   : $UPTIME"
+echo "Date     : $DATE"
+echo "License  : GNU General Public License (GPL)"
